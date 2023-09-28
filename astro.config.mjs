@@ -49,6 +49,13 @@ export default defineConfig({
 							},
 							link: '/get-started/configuration',
 						},
+						{
+							label: 'Usage',
+							translations: {
+								es: 'Uso',
+							},
+							link: '/get-started/usage',
+						},
 					]
 				},
 				{
