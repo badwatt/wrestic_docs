@@ -7,7 +7,8 @@ export default defineConfig({
 		starlight({
 			title: 'Wrestic',
 			logo: {
-				src: './src/assets/wrestic.png',
+				light: './src/assets/wr_dark.svg',
+				dark: './src/assets/wr_light.svg',
 				replacesTitle: false,
 			},
 			customCss: [
