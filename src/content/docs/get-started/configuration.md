@@ -4,7 +4,7 @@ description: A guide for accomplish Wrestic configuration.
 ---
 
 Let's see how to configure **Wrestic**.\
-Wrestic's configuration is pretty simple. All you have to do is generate a `wrestic.toml` file and start.
+Wrestic's configuration is pretty simple. All you have to do is generate a `wrestic.toml` file and add profiles.
 
 ## Configuring wrestic.toml
 Inside of your `$USER` folder, you have to create (if is not created yet) a `.config` folder.\
@@ -48,7 +48,7 @@ You can set the profile name that you like, it could be something like `[setting
 When creating a new profile, don't forget to add `settings.` before the profile name.
 
 - **BACKEND:** So, you have to pick a backend.\
-If you are going to perform a backup locally: `BACKEND = "local"`
+If you are going to perform a backup locally: `BACKEND = "local"`\
 If you are going to perform a backup remotely, you have a big list of backends, in fact, they are the same backends that [**Restic**](https://restic.readthedocs.io/en/latest/030_preparing_a_new_repo.html) supports, like:
 
   - AWS S3: `BACKEND = "s3"`
@@ -62,14 +62,14 @@ If you are going to perform a backup remotely, you have a big list of backends, 
 - **RESTIC_PASSWORD:** Here is where we set the repository password for `Restic`.\
 When creating a repository, we are asked to input a password for it so data gets encrypted and this password is the key.
 With **Wrestic** you can create the repository on the fly by entering the command `sudo wrestic init`, but we'll get into that later.
-The thing is...\
+The thing is...
     - If your repo is not created yet: `RESTIC_PASSWORD = "your_new_password"`
     - If repo already exists: `RESTIC_PASSWORD = "your_good_old_password"`
 
     And don't worry, **Wrestic** is very clever, so when you run `sudo wrestic init`, it only initialize the new repos (not initialized yet) that founds in your `wrestic.toml`.
 
 - **REPOSITORY & BACKUP_FOLDER/RESTORE_FOLDER:** In `REPOSITORY` is where you give **Wrestic** the path you your repository. It can exists or not yet.\
-Let's say you want to backup your `~/Documents` folder into `~/BACKUPS/my_documents_backup`:\
+Let's say you want to backup your `~/Documents` folder into `~/BACKUPS/my_documents_backup`:
     - `REPOSITORY = "/home/alex/BACKUPS/my_documents_backup"`
     - `BACKUP_FOLDER = "/home/alex/Documents"`
 
