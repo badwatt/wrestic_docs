@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Wrestic Docs',
+			title: 'Wrestic',
 			logo: {
 				src: './src/assets/wrestic.png',
 				replacesTitle: false,
@@ -47,8 +47,15 @@ export default defineConfig({
 								es: 'Configuración',
 							},
 							link: '/get-started/configuration',
-						}
+						},
 					]
+				},
+				{
+					label: 'Configuration Examples',
+					translations: {
+						es: 'Ejemplos de Configuración',
+					},
+					autogenerate: { directory: 'examples' },
 				},
 				{
 					label: 'Reference',
