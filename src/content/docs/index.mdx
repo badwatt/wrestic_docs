@@ -4,8 +4,12 @@ description: Get Started with Wrestic.
 template: splash
 hero:
   tagline: Wrestic is a backup tool made in Rust. It simplifies running backups, using Restic's features like encryption and compression. It's perfect for personal or business data, automating the task and keeping your data safe.
-  image:
-    file: ../../assets/wrestic.png
+  image: {
+	alt: "wrestic logo",
+	file: /src/assets/wr_dark.svg,
+	# dark: /src/assets/wr_light.svg,
+	# light: /src/assets/wr_dark.svg,
+  }
   actions:
     - text: Get Started
       link: /get-started/install
@@ -15,3 +19,14 @@ hero:
       link: https://github.com/alvaro17f/wrestic
       icon: external
 ---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+	<Card title="Terminal User Interface (TUI)" icon="pencil">
+		![wrestic tui](/src/assets/wrestic.png)
+	</Card>
+	<Card title="CLI" icon="setting">
+		![wrestic cli](/src/assets/wrestic_help.png)
+	</Card>
+</CardGrid>

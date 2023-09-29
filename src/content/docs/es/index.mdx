@@ -4,8 +4,12 @@ description: Get Started with Wrestic.
 template: splash
 hero:
   tagline: Wrestic es una herramienta de copia de seguridad construida en Rust. Simplifica la ejecución de copias de seguridad, utilizando las características de Restic como el cifrado y la compresión. Es perfecto para datos personales o de negocios, automatizando la tarea y manteniendo sus datos seguros.
-  image:
-    file: ../../../assets/wrestic.png
+  image: {
+    alt: "wrestic logo",
+    file: /src/assets/wr_dark.svg,
+    # dark: /src/assets/wr_light.svg,
+    # light: /src/assets/wr_dark.svg,
+  }
   actions:
     - text: Empezar
       link: /es/get-started/install
@@ -15,3 +19,14 @@ hero:
       link: https://github.com/alvaro17f/wrestic
       icon: external
 ---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+	<Card title="Terminal User Interface (TUI)" icon="pencil">
+		![wrestic tui](/src/assets/wrestic.png)
+	</Card>
+	<Card title="CLI" icon="setting">
+		![wrestic cli](/src/assets/wrestic_help.png)
+	</Card>
+</CardGrid>

@@ -25,9 +25,30 @@ Al ejecutar el commando:
 ```sh
 sudo wrestic help
 ```
-Se mostrará la siguiente pantalla:
+Se mostrará la pantalla de ayuda:
 
-![wrestic help](../../../../assets/wrestic_help.png)
+```sh
+Restic wrapper built in Rust
+
+Usage: wrestic [OPTIONS] [COMMAND]
+
+Commands:
+  backup     Make a backup of all your repositories
+  restore    Restore a snapshot
+  snapshots  List snapshots
+  forget     Delete a snapshot
+  init       Initialize all of your repositories
+  check      Check repository health
+  repair     Fix any issue
+  cache      Clean cache
+  update     Update Wrestic
+  help       Print this message or the help of the given subcommand(s)
+
+Options:
+      --generate <GENERATOR>  [possible values: bash, elvish, fish, powershell, zsh]
+  -h, --help                  Print help
+  -V, --version               Print version
+```
 
 ## Autocompletado
 Configurar el autocompletado para Wrestic es muy fácil.\

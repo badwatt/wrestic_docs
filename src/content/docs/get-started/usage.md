@@ -27,7 +27,28 @@ sudo wrestic help
 ```
 **Wrestic** will show you the help screen:
 
-![wrestic help](../../../assets/wrestic_help.png)
+```sh
+Restic wrapper built in Rust
+
+Usage: wrestic [OPTIONS] [COMMAND]
+
+Commands:
+  backup     Make a backup of all your repositories
+  restore    Restore a snapshot
+  snapshots  List snapshots
+  forget     Delete a snapshot
+  init       Initialize all of your repositories
+  check      Check repository health
+  repair     Fix any issue
+  cache      Clean cache
+  update     Update Wrestic
+  help       Print this message or the help of the given subcommand(s)
+
+Options:
+      --generate <GENERATOR>  [possible values: bash, elvish, fish, powershell, zsh]
+  -h, --help                  Print help
+  -V, --version               Print version
+```
 
 ## Autocompletion
 Setting up autocompletion for Wrestic is very easy.\
