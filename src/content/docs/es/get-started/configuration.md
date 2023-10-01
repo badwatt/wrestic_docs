@@ -29,9 +29,6 @@ Para añadir un perfil a tu fichero `wrestic.toml` echa un vistazo al siguiente 
 
 
 ```toml
-[user]
-USER = "alex"
-
 [settings.local]
 BACKEND = "local"
 RESTIC_PASSWORD = "alexsupersecretpassword"
@@ -40,9 +37,6 @@ BACKUP_FOLDER = "/home/alex/Documents/demo"
 RESTORE_FOLDER = "/home/alex/Documents/restored"
 KEEP_LAST = 10
 ```
-
-- **USER:** Lo primero que necesitamos es la tabla `[user]` en la parte superior.
-Tenemos que establecer el nombre de usuario en la parte superior del archivo `wrestic.toml`.
 
 - **PROFILE:** En el ejemplo puedes ver que el nombre del perfil `local` está precedido por `settings.`.
 Puedes poner el nombre de perfil que quieras, podría ser algo como `[settings.blazingly_fast]` o `[settings.pineapple]`, pero los perfiles tienen que ser únicos.

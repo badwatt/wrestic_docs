@@ -4,9 +4,6 @@ description: Configuration example for Azure.
 ---
 ## wrestic.toml
 ```toml
-[user]
-USER = "username"
-
 [settings.azure_profile]
 BACKEND = "azure"
 RESTIC_PASSWORD = "your_azure_restic_repo_password"

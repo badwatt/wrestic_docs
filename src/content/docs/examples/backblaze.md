@@ -4,9 +4,6 @@ description: Configuration example for Backblaze B2.
 ---
 ## wrestic.toml
 ```toml
-[user]
-USER = "username"
-
 [settings.backblaze_profile]
 BACKEND = "b2"
 RESTIC_PASSWORD = "your_backblaze_restic_repo_password"

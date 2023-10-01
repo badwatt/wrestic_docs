@@ -4,9 +4,6 @@ description: Configuration example for SFTP.
 ---
 ## wrestic.toml
 ```toml
-[user]
-USER = "username"
-
 [settings.sftp_profile]
 BACKEND = "sftp"
 RESTIC_PASSWORD = "your_sftp_restic_repo_password"

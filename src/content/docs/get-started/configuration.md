@@ -28,9 +28,6 @@ If you have more than 1 profile in your `wrestic.toml` you'll be asked for the p
 To add a profile to your `wrestic.toml` file look at the following example:
 
 ```toml
-[user]
-USER = "alex"
-
 [settings.local]
 BACKEND = "local"
 RESTIC_PASSWORD = "alexsupersecretpassword"
@@ -39,9 +36,6 @@ BACKUP_FOLDER = "/home/alex/Documents/demo"
 RESTORE_FOLDER = "/home/alex/Documents/restored"
 KEEP_LAST = 10
 ```
-
-- **USER:** First thing needed is the `[user]` table on top.
-We need to set the username at the top of the `wrestic.toml` file.
 
 - **PROFILE:** In the example you can see that the profile name `local` is preceded by `settings.`.
 You can set the profile name that you like, it could be something like `[settings.blazingly_fast]` or `[settings.pineapple]`, but profiles need to be unique.\

@@ -4,9 +4,6 @@ description: Configuration example for Wasabi.
 ---
 ## wrestic.toml
 ```toml
-[user]
-USER = "username"
-
 [settings.wasabi_profile]
 BACKEND = "s3"
 RESTIC_PASSWORD = "your_aws_restic_repo_password"

@@ -4,9 +4,6 @@ description: Configuration example for Google Cloud Storage.
 ---
 ## wrestic.toml
 ```toml
-[user]
-USER = "username"
-
 [settings.google_cloud_storage_profile]
 BACKEND = "gs"
 RESTIC_PASSWORD = "your_google_cloud_storage_restic_repo_password"

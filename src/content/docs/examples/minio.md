@@ -4,9 +4,6 @@ description: Configuration example for MINIO.
 ---
 ## wrestic.toml
 ```toml
-[user]
-USER = "username"
-
 [settings.minio_profile]
 BACKEND = "s3"
 RESTIC_PASSWORD = "your_minio_restic_repo_password"

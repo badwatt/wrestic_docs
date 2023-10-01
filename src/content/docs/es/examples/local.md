@@ -4,9 +4,6 @@ description: Configuration example for Local.
 ---
 ## wrestic.toml
 ```toml
-[user]
-USER = "username"
-
 [settings.local_profile]
 BACKEND = "local"
 RESTIC_PASSWORD = "your_local_restic_repo_password"
