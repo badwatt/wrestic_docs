@@ -10,7 +10,7 @@ sudo wrestic
 ```
 Y se mostrará una pantalla como ésta:
 
-![wrestic screen](../../../../assets/wrestic.png)
+![wrestic screen](../../../../assets/wrestic_tui.png)
 
 Desde aquí puedes realizar varias acciones, pero es recomendable inicializar los repositorios primero.\
 Puedes hacerlo en esta pantalla seleccionando `Initialize` o puedes ejecutar el commando directamente a través de la CLI:
