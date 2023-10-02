@@ -10,7 +10,7 @@ sudo wrestic
 ```
 It will show you a screen like this:
 
-![wrestic screen](../../../assets/wrestic_tui.png)
+![wrestic screen](src/assets/wrestic_tui.png)
 
 From there you can perform various actions, but it's recommended to initialize the repositories first.\
 You can do it inside of this screen by selecting `Initialize` or you can run the command directly with the CLI:
@@ -66,7 +66,7 @@ sudo wrestic --generate <YOUR SHELL NAME>
 ```
 
 if your shell in **bash** or **zsh** it will do everything for you, so when you restart your shell you'll have autocompletions.\
-If your shell is different, then **Wrestic** will output everything you need to get autocompletions in your shell.\
+If your shell is different, then **Wrestic** will output everything you need to get autocompletions in your shell.
 
 ***BASH USERS, YOUR ATTENTION PLEASE:***\
 Keep in mind that if your shell is **BASH** you'll need a very popular package called:\
