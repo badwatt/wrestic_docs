@@ -57,12 +57,12 @@ Si vas a realizar una copia de seguridad de forma remota, usted tiene una gran l
 
 - **RESTIC_PASSWORD:** Aquí es donde establecemos la contraseña del repositorio para `Restic`.\
 Cuando creamos un repositorio, se nos pide que introduzcamos una contraseña para que los datos queden encriptados y esta contraseña es la llave.\
-Con **Wrestic** puedes crear el repositorio sobre la marcha introduciendo el comando `sudo wrestic init`, pero eso lo veremos más adelante.
+Con **Wrestic** puedes crear el repositorio sobre la marcha introduciendo el comando `wrestic init`, pero eso lo veremos más adelante.
 La cosa es...
     - Si su repositorio aún no se ha creado: `RESTIC_PASSWORD = "tu_nueva_contraseña"`.
     - Si el repositorio ya existe: `RESTIC_PASSWORD = "tu_contraseña_ya_existente"`.
 
-    Y no te preocupes, **Wrestic** es muy inteligente, así que cuando ejecutas `sudo wrestic init`, sólo inicializa los nuevos repositorios (aún no inicializados) que encuentra en tu `wrestic.toml`.
+    Y no te preocupes, **Wrestic** es muy inteligente, así que cuando ejecutas `wrestic init`, sólo inicializa los nuevos repositorios (aún no inicializados) que encuentra en tu `wrestic.toml`.
 
 
 - **REPOSITORY & BACKUP_FOLDER/RESTORE_FOLDER:**  En `REPOSITORT` es donde le dices a **Wrestic** cual es la ruta de tu repositorio. Puede existir o no todavía.\

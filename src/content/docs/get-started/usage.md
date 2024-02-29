@@ -6,7 +6,7 @@ description: How to use Wrestic.
 To use **Wrestic** simply run the following command:
 
 ```sh
-sudo wrestic
+wrestic
 ```
 It will show you a screen like this:
 
@@ -16,21 +16,21 @@ From there you can perform various actions, but it's recommended to initialize t
 You can do it inside of this screen by selecting `Initialize` or you can run the command directly with the CLI:
 
 ```sh
-sudo wrestic init
+wrestic init
 ```
 This commad will start all the repos not initialized yet from your `wrestic.toml` file.
 
 ## Wrestic commands
 When you run the following command:
 ```sh
-sudo wrestic help
+wrestic help
 ```
 **Wrestic** will show you the help screen:
 
 ```sh
 Restic wrapper built in Rust
 
-Usage: wrestic [OPTIONS] [COMMAND]
+Usage: wrestic [COMMAND]
 
 Commands:
   backup, -b     Make a backup of all your repositories
@@ -43,12 +43,12 @@ Commands:
   cache          Clean cache
   update, -u     Update Wrestic
   custom, -c     Custom command
+  completions    Generate tab-completion scripts for your shell
   help           Print this message or the help of the given subcommand(s)
 
 Options:
-      --generate <GENERATOR>  [possible values: bash, elvish, fish, powershell, zsh]
-  -h, --help                  Print help
-  -V, --version               Print version
+  -h, --help     Print help
+  -V, --version  Print version
 ```
 
 ## Autocompletion
@@ -63,11 +63,15 @@ So... How can I get autocompletions?\
 Just run:
 
 ```sh
-sudo wrestic --generate <YOUR SHELL NAME>
+wrestic completions <YOUR SHELL NAME>
 ```
+This command will show via console the script you need for your shell.\
+To get autocompletion, you must save this script in a file in the respective completions folder of your shell.\
+Taking **bash** as an example, you can run:
 
-if your shell in **bash** or **zsh** it will do everything for you, so when you restart your shell you'll have autocompletions.\
-If your shell is different, then **Wrestic** will output everything you need to get autocompletions in your shell.
+```sh
+wrestic completions <YOUR SHELL NAME> > /etc/bash_completion.d/wrestic
+```
 
 ***BASH USERS, YOUR ATTENTION PLEASE:***\
 Keep in mind that if your shell is **BASH** you'll need a very popular package called:\

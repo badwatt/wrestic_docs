@@ -55,12 +55,12 @@ If you are going to perform a backup remotely, you have a big list of backends, 
 
 - **RESTIC_PASSWORD:** Here is where we set the repository password for `Restic`.\
 When creating a repository, we are asked to input a password for it so data gets encrypted and this password is the key.
-With **Wrestic** you can create the repository on the fly by entering the command `sudo wrestic init`, but we'll get into that later.
+With **Wrestic** you can create the repository on the fly by entering the command `wrestic init`, but we'll get into that later.
 The thing is...
     - If your repo is not created yet: `RESTIC_PASSWORD = "your_new_password"`
     - If repo already exists: `RESTIC_PASSWORD = "your_good_old_password"`
 
-    And don't worry, **Wrestic** is very clever, so when you run `sudo wrestic init`, it only initialize the new repos (not initialized yet) that founds in your `wrestic.toml`.
+    And don't worry, **Wrestic** is very clever, so when you run `wrestic init`, it only initialize the new repos (not initialized yet) that founds in your `wrestic.toml`.
 
 - **REPOSITORY & BACKUP_FOLDER/RESTORE_FOLDER:** In `REPOSITORY` is where you give **Wrestic** the path you your repository. It can exists or not yet.\
 Let's say you want to backup your `~/Documents` folder into `~/BACKUPS/my_documents_backup`:

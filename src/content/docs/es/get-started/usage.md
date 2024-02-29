@@ -6,7 +6,7 @@ description: Cómo usar Wrestic.
 Para usar **Wrestic** solo tienes que ejecutar el siguiente comando:
 
 ```sh
-sudo wrestic
+wrestic
 ```
 Y se mostrará una pantalla como ésta:
 
@@ -16,21 +16,21 @@ Desde aquí puedes realizar varias acciones, pero es recomendable inicializar lo
 Puedes hacerlo en esta pantalla seleccionando `Initialize` o puedes ejecutar el commando directamente a través de la CLI:
 
 ```sh
-sudo wrestic init
+wrestic init
 ```
 Este commando inicializará todos los repositorios que aún no hayan sido inicializados y se encuentren en tu archivo `wrestic.toml`.
 
 ## Comandos de Wrestic
 Al ejecutar el commando:
 ```sh
-sudo wrestic help
+wrestic help
 ```
 Se mostrará la pantalla de ayuda:
 
 ```sh
 Restic wrapper built in Rust
 
-Usage: wrestic [OPTIONS] [COMMAND]
+Usage: wrestic [COMMAND]
 
 Commands:
   backup, -b     Make a backup of all your repositories
@@ -43,12 +43,12 @@ Commands:
   cache          Clean cache
   update, -u     Update Wrestic
   custom, -c     Custom command
+  completions    Generate tab-completion scripts for your shell
   help           Print this message or the help of the given subcommand(s)
 
 Options:
-      --generate <GENERATOR>  [possible values: bash, elvish, fish, powershell, zsh]
-  -h, --help                  Print help
-  -V, --version               Print version
+  -h, --help     Print help
+  -V, --version  Print version
 ```
 
 ## Autocompletado
@@ -63,13 +63,15 @@ Entonces... ¿Cómo puedo obtener autocompletado?\
 Simplemente ejecuta:
 
 ```sh
-sudo wrestic --generate  <NOMBRE DE TU SHELL>
+wrestic completions <NOMBRE DE TU SHELL>
 ```
+Este comando mostrara por consola el script que necesitas para tu shell.\
+Para obtener autocompletado, debes guardar este script en un archivo en la respectiva carpeta de completions de tu shell.\
+Tomando como ejemplo el caso de **bash**, puedes ejecutar:
 
-Si tu shell es **bash** o **zsh** entonces **Wrestic** hará todo por ti,\
-de modo que cuando reinicies tu shell tendrás autocompletados.
-
-Si tu shell es diferente, entonces **Wrestic** generará todo lo que necesites para obtener autocompletados en tu shell.
+```sh
+wrestic completions <NOMBRE DE TU SHELL> > /etc/bash_completion.d/wrestic
+```
 
 ***USUARIOS DE BASH, ATENCIÓN POR FAVOR:***\
 Ten en cuenta que si tu shell es **BASH** necesitarás un paquete muy popular llamado:\
