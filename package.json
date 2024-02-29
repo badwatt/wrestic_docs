@@ -1,17 +1,19 @@
 {
-  "name": "wrestic-docs",
+  "name": "wrestic_docs",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.12.0",
-    "astro": "^3.4.2",
-    "sharp": "^0.32.6"
+    "@astrojs/check": "^0.5.6",
+    "@astrojs/starlight": "^0.20.1",
+    "astro": "^4.4.6",
+    "sharp": "^0.32.5",
+    "typescript": "^5.3.3"
   }
 }
