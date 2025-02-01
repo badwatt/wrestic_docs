@@ -1,10 +1,7 @@
-version: "3.9"
 services:
   wrestic_docs:
-    image: node:latest
     container_name: wrestic_docs
-    ports:
-      - "127.0.0.1:8585:4321"
+    image: node:latest
     restart: unless-stopped
     volumes:
         - .:/project
@@ -19,3 +16,13 @@ services:
         && npm run preview -- --host 0.0.0.0 &
         tail -f /dev/null
         "
+    networks: [proxy]
+    labels:
+      traefik.enable: true
+      traefik.http.routers.wrestic.entrypoints: https
+      traefik.http.routers.wrestic.rule: Host(`wrestic.com`)
+      traefik.http.services.wrestic.loadbalancer.server.port: 4321
+
+networks:
+  proxy:
+    external: {}
