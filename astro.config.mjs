@@ -31,7 +31,7 @@ export default defineConfig({
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/alvaro17f/wrestic",
+          href: "https://github.com/badwatt/wrestic",
         },
       ],
       sidebar: [
