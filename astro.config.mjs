@@ -27,9 +27,13 @@ export default defineConfig({
           lang: "es",
         },
       },
-      social: {
-        github: "https://github.com/alvaro17f/wrestic",
-      },
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/alvaro17f/wrestic",
+        },
+      ],
       sidebar: [
         {
           label: "Get Started",
@@ -65,14 +69,14 @@ export default defineConfig({
           translations: {
             es: "Ejemplos de Configuración",
           },
-          autogenerate: { directory: "examples" },
+          items: [{ autogenerate: { directory: "examples" } }],
         },
         {
           label: "Reference",
           translations: {
             es: "Referencia",
           },
-          autogenerate: { directory: "reference" },
+          items: [{ autogenerate: { directory: "reference" } }],
         },
       ],
     }),
