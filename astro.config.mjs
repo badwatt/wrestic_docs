@@ -1,10 +1,12 @@
 import { defineConfig } from "astro/config";
 
-import node from "@astrojs/node";
 import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://badwatt.github.io",
+  base: "/wrestic_docs",
+
   integrations: [
     starlight({
       title: "Wrestic",
@@ -81,9 +83,6 @@ export default defineConfig({
     host: true,
   },
 
-  output: "server",
-  adapter: node({
-    mode: "standalone",
-  }),
+  output: "static",
 });
 
