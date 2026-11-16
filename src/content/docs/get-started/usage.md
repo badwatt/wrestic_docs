@@ -10,7 +10,7 @@ wrestic
 ```
 It will show you a screen like this:
 
-![wrestic screen](src/assets/wrestic_tui.png)
+![wrestic screen](../../../assets/wrestic_tui.png)
 
 From there you can perform various actions, but it's recommended to initialize the repositories first.\
 You can do it inside of this screen by selecting `Initialize` or you can run the command directly with the CLI:

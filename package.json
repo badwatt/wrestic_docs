@@ -1,13 +1,15 @@
 {
   "name": "wrestic_docs",
-  "type": "module",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "upgrade": "vpx @astrojs/upgrade",
+    "prepare": "vp config"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.12",
@@ -15,5 +17,9 @@
     "astro": "^7.4.12",
     "sharp": "^0.35.5",
     "typescript": "^5.9.3"
-  }
+  },
+  "devDependencies": {
+    "vite-plus": "1.5.0"
+  },
+  "packageManager": "pnpm@12.9.0"
 }
